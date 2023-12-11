@@ -1,0 +1,18 @@
+.endOfSummer {
+
+  @media screen and (max-width: 479.98px) {
+    min-width: 100vw;
+    min-height: 90vw;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1400px) {
+    max-height: 90vh;
+    // width: 100%;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1401px) {
+    max-height: 90vh;
+    max-width: 500px;
+  }
+}

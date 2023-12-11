@@ -1,0 +1,20 @@
+.smallerFeature {
+  // min-width: 250px;
+  text-align: center;
+  h3,
+  h4 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  position: relative;
+
+  svg {
+    color: #af8611;
+    max-width: 90px;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 0.8rem;
+  }
+}

@@ -1,0 +1,50 @@
+.pricelist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4px;
+  font-size: 1.2rem;
+  @media screen and (max-width: $medium-breakpoint) {
+    font-size: 0.9rem;
+  }
+  // font-weight: bold;
+}
+
+.pricelist div {
+  text-align: center;
+  padding: 1.2rem;
+  display: grid;
+  align-items: center;
+  background-color: darken($body-background, 3%);
+  @media screen and (max-width: $medium-breakpoint) {
+    padding: 0.7rem;
+  }
+}
+
+.pricelist div:first-child {
+  background-color: transparent;
+}
+
+.pricelist div:nth-child(2),
+.pricelist div:nth-child(3),
+.pricelist div:nth-child(4) {
+  background-color: $main-teal;
+  color: white;
+  font-weight: bold;
+  span {
+    font-weight: normal;
+    font-size: 1rem;
+    @media screen and (max-width: $medium-breakpoint) {
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: $medium-breakpoint) {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.span-2-4 {
+  grid-column: 2 / 5;
+}
+
+// .pricelist

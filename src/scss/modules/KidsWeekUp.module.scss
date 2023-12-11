@@ -1,0 +1,107 @@
+@import "../variables";
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.kidsWeekUp {
+  // max-width: 600px;
+  transition: visibility 0s, opacity 0.5s linear;
+  // width: 70%;
+  position: fixed;
+  right: 1px;
+  bottom: 50px;
+  // min-width: 400px;
+  margin: 2 auto;
+  padding: 3px;
+
+  @media screen and (min-width: 600px) {
+    padding: 10px
+  }
+
+  z-index: 4;
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    color: white;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    text-shadow: 0 0 6px #000;
+    margin-bottom: 0;
+  }
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-radius: 6px;
+  // max-width: 600px;
+  max-width: 100%;
+  min-height: 360px;
+  display: flex;
+  padding: 1rem;
+  margin: 2rem auto 0;
+  justify-content: left;
+  align-items: flex-end;
+  transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  // @media screen and (min-width: $medium-breakpoint) {
+  //   &:hover {
+  //     transform: scale(1.04);
+  //     z-index: 4;
+  //   }
+  // }
+}
+
+.closeButton {
+  @include button-reset;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  font-size: 1.6rem;
+  z-index: 5;
+  border: 1px solid teal;
+}
+
+.tagGrid {
+  display: flex;
+  // grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
+  // grid-gap: 0.5rem;
+  flex-wrap: wrap;
+
+  // * {
+  //   display: inline;
+  // }
+  span:first-child {
+    margin-right: 0.5rem;
+  }
+}

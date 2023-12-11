@@ -1,0 +1,88 @@
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
+.hollow-button {
+  @include button-reset;
+  border: 2px solid $main-teal;
+  color: $main-teal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0.5em 1em;
+
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 2px 0;
+  border-radius: $global-radius;
+  // text-align: center;
+
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  &:hover:not([disabled]),
+  &:active:not([disabled]) {
+    color: white;
+    background-color: $main-teal;
+    transition: background-color 150ms linear;
+    // transition: color 200ms linear;
+  }
+
+  &:disabled {
+    border: 2px solid grey;
+    color: grey;
+  }
+}
+
+.big-feature .hollow-button {
+  z-index: 10;
+}
+
+.cta-button {
+  @include button-reset;
+  border: 2px solid $main-teal;
+  background-color: $main-teal;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 0.5em 1em;
+
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: 2px 0;
+  border-radius: $global-radius;
+  // text-align: center;
+
+  &:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+
+  &:hover:not([disabled]),
+  &:active:not([disabled]) {
+    color: white;
+    background-color: lighten($main-teal, 5%);
+    transition: background-color 150ms linear;
+    // transition: color 200ms linear;
+  }
+
+  &:disabled {
+    border: 2px solid grey;
+    color: grey;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../variables";
+.kidsWeekLink {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    color: white;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    text-shadow: 0 0 6px #000;
+    margin-bottom: 0;
+  }
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-radius: 6px;
+  max-width: 700px;
+  // max-width: 100%;
+  min-height: 360px;
+  display: flex;
+  padding: 1rem;
+  margin: 2rem auto 0;
+  justify-content: left;
+  align-items: flex-end;
+  transition: all 0.2s;
+
+  @media screen and (min-width: $medium-breakpoint) {
+    &:hover {
+      transform: scale(1.04);
+      z-index: 1;
+    }
+  }
+}
+
+.tagGrid {
+  display: flex;
+  // grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
+
+  // grid-gap: 0.5rem;
+  flex-wrap: wrap;
+  // * {
+  //   display: inline;
+  // }
+  span:first-child {
+    margin-right: 0.5rem;
+  }
+}

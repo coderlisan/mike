@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow-headers {
+  text-shadow: 0 0 6px #000;
+}
+
+.linear-background {
+  background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, .85));
+}

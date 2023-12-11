@@ -1,0 +1,43 @@
+@import "../variables";
+
+.hero {
+  display: grid;
+  height: calc(100vh - 80px);
+
+  @media screen and (max-width: $medium-breakpoint) {
+    height: calc(100vh - 70px);
+  }
+
+}
+
+.heroImage {
+  grid-area: 1/1;
+}
+
+.heroText {
+  background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, .85));
+  grid-area: 1/1;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  h1,
+  h2 {
+    font-size: 2.8rem;
+    text-shadow: 0 0 6px #000;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    h1,
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../variables";
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
+.bookNow {
+  // background-color: #135353eb;
+  // background-color: lighten(#0e3e3e, 5%);
+  text-align: center;
+  color: white;
+  // padding: 2rem 1rem;
+  margin: 1rem auto;
+  border-radius: $global-radius;
+  @media screen and (min-width: $small-breakpoint) {
+    // margin-top: 3rem;
+    max-width: 800px;
+  }
+  h2 {
+    color: whitesmoke;
+    margin: 0;
+    span {
+      font-size: 2.5rem;
+    }
+  }
+  h3 {
+    color: whitesmoke;
+    // margin: 0
+  }
+  button {
+    @include button-reset;
+    background-color: #fcd34d;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: $global-radius;
+    margin: 2rem 1rem 1rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    color: black;
+    &:hover {
+      background-color: darken(#fcd34d, 5%);
+    }
+  }
+}

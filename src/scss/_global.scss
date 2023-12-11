@@ -1,0 +1,175 @@
+body {
+  // background-color: #f3f3f3;
+  background-color: $body-background;
+  color: #444;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  // color: #22543d;
+  font-weight: 500;
+  color: $main-teal;
+}
+
+
+p {
+  max-width: 40rem;
+}
+
+a {
+  color: $main-teal;
+  // font-weight: bold;
+}
+
+.block {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    max-width: 36rem;
+  }
+}
+
+.text-block {
+  max-width: 36rem;
+}
+
+.text-block-wider {
+  max-width: 42em;
+}
+
+.block-centered-without-padding {
+  margin: 0 auto;
+}
+
+.block-centered {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  @media screen and (min-width: $large-breakpoint) {
+    padding: 0 1rem;
+  }
+}
+
+.centered-container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.short-centered-container {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.just-center {
+  margin: 0 auto;
+}
+
+.dot-list {
+  margin-left: 0;
+
+  li {
+    list-style: none;
+  }
+
+  li:before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    color: $main-teal;
+    background-image: url("../../static/dot-circle-regular.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding-right: 1.5em;
+  }
+}
+
+.fa-dot-circle {
+  color: $main-teal;
+}
+
+.review-grid {
+  display: grid;
+  grid-gap: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+
+  @media screen and (min-width: $large-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.side-by-side {
+  display: grid;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 6rem;
+
+  h3 {
+    padding-left: 1rem;
+    text-align: center;
+  }
+
+  p {
+    padding-left: 1rem;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    h3 {
+      padding-left: 0;
+    }
+
+    p {
+      padding-left: 0;
+    }
+  }
+}
+
+.inline-svg {
+  width: 1rem;
+  // height: 1rem;
+  margin-right: 0.7rem;
+  // vertical-align: bottom;
+  display: inline;
+  position: relative;
+  top: 0.2em;
+  margin-bottom: 0;
+}
+
+.map-image {
+  max-width: 882px;
+  width: 100%;
+  height: 100%;
+}
+
+.first-header {
+  margin-top: 0;
+}
+
+p.small {
+  font-size: 0.8rem;
+}
+
+.send-button {
+  @media screen and (max-width: $large-breakpoint) {
+    width: 100%;
+  }
+}

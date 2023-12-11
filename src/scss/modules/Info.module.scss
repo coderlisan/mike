@@ -1,0 +1,9 @@
+@import "../variables";
+
+.info {
+  border-radius: $global-radius;
+  border: 2px solid $main-teal;
+  padding: 1.8rem;
+  background-color: lighten(#e6fffa, 2%);
+  max-width: 36em;
+}

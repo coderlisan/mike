@@ -1,0 +1,112 @@
+@import "../variables";
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
+.bookingForm {
+  textarea {
+    width: 400px;
+  }
+  input {
+    max-width: 300px;
+    // box-shadow: ;
+  }
+  > div {
+    margin-top: 2rem;
+  }
+  // > div > div {
+  //   margin-top: 1rem;
+  // }
+  label {
+    // display: block;
+    // width: 300px;
+    font-size: 0.9rem;
+  }
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+}
+
+.formButton {
+  @include button-reset;
+  width: 50px;
+  font-size: 1.3rem;
+  background-color: lighten($main-teal, 10%);
+  color: white;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 0.2rem;
+  &:active {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+}
+
+.leftButton {
+  border-radius: 6px 0 0 6px;
+}
+
+.leftButton {
+  border-radius: 0 6px 6px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  text-align: center;
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.buttonGroup {
+  input {
+    display: none;
+  }
+  input + label:hover {
+    background-color: lightgoldenrodyellow;
+  }
+  input:checked + label,
+  input:checked + label:active {
+    background-color: $main-teal;
+    color: white;
+  }
+  // [type="radio"] + label {
+  //   margin: 0;
+  // }
+}
+
+.radioButton {
+  padding: 0.6rem 0.6rem;
+  border: 2px solid $main-teal;
+  border-radius: $global-radius;
+  display: inline-block;
+  margin-right: 0.3rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  @media screen and (max-width: $small-breakpoint) {
+    padding: 0.4rem 0.4rem;
+  }
+  // background-color: tomato;
+}
+
+.inline-block {
+  display: inline-block;
+}

@@ -1,0 +1,15 @@
+@import "../scss/variables";
+
+.twoPictures {
+  display: grid;
+  @media screen and (min-width: $large-breakpoint) {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  img {
+    height: 100%;
+  }
+}

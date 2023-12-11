@@ -1,0 +1,26 @@
+@import "../variables";
+
+.splitContact {
+  margin-top: 2rem;
+  display: grid;
+  @media screen and (min-width: $large-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+  }
+}
+
+.contactContainer {
+  padding: 3rem;
+  a {
+    text-decoration: none;
+  }
+  @media screen and (max-width: $large-breakpoint) {
+    padding: 2rem 2rem 0;
+  }
+}
+
+// .contactImg {
+//   @media screen and (max-width: $large-breakpoint) {
+//     // display: none;
+//   }
+// }

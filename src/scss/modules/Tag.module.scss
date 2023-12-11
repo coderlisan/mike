@@ -1,0 +1,12 @@
+@import "../variables";
+
+.tag {
+  background-color: lighten(#0e3e3e, 5%);
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: $global-radius;
+  text-transform: uppercase;
+  // letter-spacing: 1.2rem;
+  margin-bottom: 0.5rem;
+}

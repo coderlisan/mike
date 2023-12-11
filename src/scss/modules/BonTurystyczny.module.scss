@@ -1,0 +1,20 @@
+.bon {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+.img {
+  align-self: center;
+  margin-right: 2rem;
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
+  }
+}

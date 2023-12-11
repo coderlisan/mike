@@ -1,0 +1,22 @@
+@import "../variables";
+
+.review {
+  // background-color: darken($body-background, 2%);
+  // background-color: desaturate(lighten($main-teal, 78%), 79%);
+  border-radius: $global-radius;
+  box-shadow: $shadow;
+  padding: 2rem;
+  border: 1px solid rgba(lighten($main-teal, 10%), 0.4);
+  @media screen and (max-width: $small-breakpoint) {
+    padding: 1rem;
+  }
+}
+
+.signature {
+  font-size: 0.8rem;
+  font-style: italic;
+  span {
+    font-size: 0.6rem;
+  }
+  margin-bottom: 0;
+}
